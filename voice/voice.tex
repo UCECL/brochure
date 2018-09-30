@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  My documentation report
+%  Objetive: Explain what I did and how, so someone can continue with the investigation
+%
+% Important note:
+% Chapter heading images should have a 2:1 width:height ratio,
+% e.g. 920px width and 460px height.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{bbding}
+
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{52,177,201} % Define the orange color used for highlighting throughout the book
+
+% Font Settings
+\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+\usepackage{graphicx}
+
+\usepackage{ragged2e}
+\usepackage{xcolor}
+
+\usepackage[most]{tcolorbox}
+\usepackage[firstpage=true]{background}
+
+\newtcolorbox{mytransparentbox}[1][]{%
+  coltext=white,
+  arc=0pt,
+  auto outer arc,
+  enhanced jigsaw,
+  opacityback=0.6,
+  opacityframe=0.0,
+  colback=cyan,
+  width=\paperwidth,
+  boxrule=0pt,
+  oversize=9cm,
+  #1
+}
+
+\newcommand{\misoline}{
+\vspace{-1.5em}
+\begin{center}
+\line(1,0){360}
+\end{center}
+}
+
+\renewcommand{\thesection}{\arabic{section}}%
+
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\AddToShipoutPicture*{\put(0,0){\includegraphics{cover}}} % Image background
+\centering
+\vspace*{5cm}
+\begin{mytransparentbox}[height=3cm]
+\par\normalfont\fontsize{30}{30}\sffamily\selectfont
+\centering\textbf{The Voice : La plus belle voix lilloise}\\
+\vspace*{0.5cm}
+\misoline
+\vspace*{-0.3cm}
+\par\normalfont\fontsize{25}{25}\sffamily\selectfont
+\hspace{0cm}UCECL \hspace{5.5cm}Oct, 2018
+\end{mytransparentbox}
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	SPONSOR PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+%~\vfill
+\thispagestyle{empty}
+\begin{center}
+\huge{\textsc{Lille : La plus belle voix Franco-Chinoise 2018}}\\
+\LARGE{Produit par : UCECL}\\ 
+\includegraphics[scale=0.1]{img/avatar.png}% URL
+\vspace{1cm}
+\misoline
+\huge{Nous tenons à remercier nos sponsors :}\\ 
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[t]{0.25\textwidth}
+    \centering\includegraphics[width=\textwidth]{img/airfrance.jpg}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.25\textwidth}
+    \centering\includegraphics[width=\textwidth]{img/cice.jpg}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.25\textwidth}
+    \centering\includegraphics[width=\textwidth]{img/pangniu.jpg}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.25\textwidth}
+    \centering\includegraphics[width=\textwidth]{img/ppost.jpg}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.25\textwidth}
+    \centering\includegraphics[width=\textwidth]{img/printemps.jpg}
+  \end{subfigure}
+\end{figure}
+\end{center}
+\normalsize
+% Printing/edition date
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\chapterimage{logo.jpg} % Table of contents heading image
+
+%\pagestyle{empty} % No headers
+
+%\tableofcontents % Print the table of contents itself
+
+%\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+%\pagestyle{fancy} % Print headers again
+
+%----------------------------------------------------------------------------------------
+%	MAIN TEXT
+%----------------------------------------------------------------------------------------
+
+\chapterimage{logo.jpg} % Chapter heading image
+
+\chapter*{Appel la plus belle voix 2018}
+
+\section{Contexte}
+
+Suite \`a la r\'eussite de la derni\`ere \'edition de la plus belle voix chinoise \`a Lille, l'Union des chercheurs et \'etudiants chinois \`a Lille (UCECL) lance des appels pour une nouvelle \'edition en mois d'octobre.
+
+Ce petit concours de chant, dont l'id\'ee vient de la fameuse \'emission t\'el\'evis\'ee The Voice, a re\c cu sa r\'eputation parmi les \'etudiant-es chinois-es durant ces derni\`eres ann\'ees. Il permet aux jeunes \'etudiant-es, surtout ceux qui adorent la musique et chanter, de montrer leur capacit\'e hors \'etude. Nous sommes donc ravi de relancer cet \'ev\`enement exceptionnel dans le mois qui vient, et nous souhaitons aller encore plus loin cette fois-ci. Vous apprenez le chinois ? Vous aimez bien la C-pop ? Vous voulez chanter du chinois devant le public ? Alors ce concours est pour vous, venez vite \`a nous rejoindre !
+
+\section{Calendrier provisoire}
+
+Le concours est constitu\'e de 3 phases :
+
+\begin{itemize}
+    \item[\Checkmark] \textbf{Auditions publics} (\emph{offline} \& \emph{online}) : du d\'ebut octobre \`a la mi-octobre
+    \item[\Checkmark] \textbf{Demi-finale} (\emph{offline}) : fin octobre (nombre estim\'e de participants 30$\sim$40)
+    \item[\Checkmark] \textbf{Finale} (\emph{offline}) : fin octobre (nombre estim\'e de participants 10)
+    \item[\Checkmark] Lieu pour la demi-finale \& la finale : TBD
+\end{itemize}
+
+\section{R\`eglement du concours}
+
+\subsection{Eligibilit\'e}
+
+Sont \'eligibles au concours : tous les \'etudiants sinophones ou les \'etudiants (fran\c cais ou \'etrangers) qui s'appr\^etent \`a chanter en chinois.
+
+\subsection{Modalit\'e d'inscription}
+
+Tous les participants doivent choisir l'une des deux approches suivantes pour participer \`a l'audition public :
+\begin{itemize}[label=\textbullet]
+    \item Mode \emph{offline} - se prendre un rdv avec le responsable (d\'esign\'e par l'UCECL) dans votre \'etablissement, et puis chanter en live ;
+    \item Mode \emph{online} - enregistrer une pi\`ece de video ou audio d'au moins 30 secondes, puis nous envoyer.
+\end{itemize}
+
+\subsection{R\`egles g\'en\'erales}
+
+Tous les participants de la demi-finale et la finale se doivent suivre les r\`egles suivantes :
+\begin{itemize}[label=\textbullet]
+    \item Vous devez pr\'eparer deux pi\`eces de chansons de leur choix : la premi\`ere en 2 mins pour la demi-finale, et la deuxi\`eme en complet \'eventuellement pour la finale ;
+    \item Chanter en duo ou en groupe sont autoris\'es, mais le groupe ne doit pas d\'epasser 5 personnes ;
+    \item Vous devez nous envoyer l'accompagnement de vos chansons avant une date \`a determiner ;
+    \item Vous devez \'egalement mettre l'accompagnement dans une cl\'e USB et l'apporter avec vous le jour J ;
+    \item Vous devez arriver 20 mins en avance le jour J, et 30 mins en avance si vous voulez tester le micro ;
+    \item Tous les non respects de ces r\`egles pr\'ec\'edentes peuvent se faire exclure du concours tout de suite.
+\end{itemize}
+
+\end{document}
